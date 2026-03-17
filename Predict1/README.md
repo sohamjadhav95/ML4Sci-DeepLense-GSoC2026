@@ -1,4 +1,4 @@
-# PREDICT1 — CAC Heart Segmentation
+# PREDICT1: CAC Heart Segmentation
 ### GSoC 2026 | ML4Sci | PrediCT Project 1
 
 **Building and Comparing Segmentation Strategies for Coronary Artery Calcium (CAC)**
@@ -83,7 +83,7 @@ The cardiac region occupies fewer than 30% of axial slices per volume. A `Weight
 
 ---
 
-## Specific Task — Heart Segmentation Model
+## Specific Task: Heart Segmentation Model
 
 ### Ground Truth Generation: TotalSegmentator
 
@@ -114,7 +114,7 @@ Channel progression: 1 → 32 → 64 → 128 → 256 → 512
 **Design justification:**
 
 - **2D over 3D:** COCA axial spacing is 3mm (anisotropic) — slice-wise 2D processing is natural for this data. Full 3D U-Net would require 10–20× more VRAM (4GB constraint on RTX 3050 laptop)
-- **base_features=32:** ~7.8M parameters — sufficient capacity for coarse heart boundary segmentation without overfitting on 34 training volumes
+- **base_features=32:** ~7.8M parameters, sufficient capacity for coarse heart boundary segmentation without overfitting on 34 training volumes
 - **BatchNorm:** Stable gradient flow with batch_size=8
 - **Bilinear upsample:** Fewer checkerboard artifacts compared to ConvTranspose2d
 
