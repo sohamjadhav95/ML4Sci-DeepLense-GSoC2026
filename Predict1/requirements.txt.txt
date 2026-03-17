@@ -1,0 +1,11 @@
+torch
+torchvision
+monai
+SimpleITK
+nibabel
+scikit-learn
+matplotlib
+pandas
+tqdm
+opencv-python
+totalsegmentator
