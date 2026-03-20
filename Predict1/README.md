@@ -63,12 +63,12 @@ Augmentation is minimal and geometric - appropriate for CT where intensity value
 
 Stratification by calcium burden category ensures all severity levels are represented in each split:
 
-| Category | Voxel Proxy (Agatston-like) | Count |
+| Category            | Voxel Count    | Scans |
 |---|---|---|
-| Severe (≥400) | ≥400 voxels | 33 |
-| Moderate (100–399) | 100–399 voxels | 13 |
-| Mild (1–99) | 1–99 voxels | 4 |
-| None (0) | 0 voxels | 0 |
+| Mild                | 1–99 voxels    | 4     |
+| Moderate            | 100–399 voxels | 13    |
+| Severe              | ≥400 voxels    | 33    |
+| None (0 calcium)    | 0 voxels       | 0     |
 
 **Final split:** Train: 34 scans | Val: 8 scans | Test: 8 scans
 
